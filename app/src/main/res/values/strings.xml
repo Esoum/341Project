@@ -6,4 +6,24 @@
     <string name="log_in">Log In</string>
     <string name="create_account">Create Account</string>
     <string name="banner">banner</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="location">Location</string>
+    <string name="job">Job</string>
+    <string name="about_you">About You</string>
+    <string name="name">Name</string>
+    <string name="profile_photo">profile photo</string>
+    <string name="todo">TODO</string>
+    <string name="mm_dd_yyyy">mm/dd/yyyy</string>
+    <string name="back">Back</string>
+    <string name="cont">Continue</string>
+    <string name="i_am">I am…</string>
+    <string name="superhero">Superhero</string>
+    <string name="kelowna">Kelowna</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm">Confirm</string>
 </resources>
