@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickLogIn(View view){
-
+        Intent intent = new Intent(this, LogIn.class);
+        startActivity(intent);
     }
 
     public void onClickCreateAcct(View view){
