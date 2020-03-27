@@ -11,7 +11,9 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class CreateAcct extends AppCompatActivity {
 
@@ -57,12 +59,23 @@ public class CreateAcct extends AppCompatActivity {
     }
 
         public void onClickBack (View view){
-
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
         }
 
         public void onClickContinue (View view){
             Intent intent = new Intent(this, CreateAcct2.class);
-            startActivity(intent);
+
+            EditText fname = findViewById(R.id.editText);
+            EditText lname = findViewById(R.id.editText2);
+            String f = fname.getText().toString();
+            String l = lname.getText().toString();
+
+            if (f.isEmpty() || l.isEmpty()){
+                Toast.makeText(getApplicationContext(),"Please enter a name",Toast.LENGTH_SHORT).show();
+            }
+            else
+                startActivity(intent);
         }
 
 }
