@@ -5,15 +5,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.EditText;
 
-public class LogIn extends AppCompatActivity {
+public class eventMain extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_log_in);
-
+        setContentView(R.layout.activity_event_main);
     }
 
+    public void onClickCreateEvent(View view){
+        Intent intent = new Intent(this, createEvent.class);
+        startActivity(intent);
+    }
 }

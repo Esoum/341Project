@@ -19,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickEvents(View view){
-
+        Intent intent = new Intent(this, eventMain.class);
+        startActivity(intent);
     }
 
     public void onClickMarket(View view){

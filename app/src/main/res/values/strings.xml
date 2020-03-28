@@ -26,4 +26,19 @@
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="confirm">Confirm</string>
+    <string-array name="category">
+        <item>Music</item>
+        <item>Visual Arts</item>
+        <item>Performing Arts</item>
+        <item>Film</item>
+        <item>Lectures or Books</item>
+        <item>Fashion </item>
+        <item>Food and Drink</item>
+        <item>Festivals and Fairs</item>
+        <item>Charities </item>
+        <item>Sports and Active Life</item>
+        <item>Nightlife </item>
+        <item>Kids and Family</item>
+        <item>Other </item>
+    </string-array>
 </resources>
