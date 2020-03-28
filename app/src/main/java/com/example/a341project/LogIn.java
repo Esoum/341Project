@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -74,4 +73,5 @@ public class LogIn extends AppCompatActivity {
         if (flag == false)
             Toast.makeText(getApplicationContext(),"Please enter a valid username and password",Toast.LENGTH_SHORT).show();
     }
+
 }
