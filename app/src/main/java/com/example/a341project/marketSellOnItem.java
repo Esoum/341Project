@@ -12,12 +12,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class createEvent extends AppCompatActivity {
+public class marketSellOnItem extends AppCompatActivity {
     private static int RESULT_LOAD_IMAGE = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_event);
+        setContentView(R.layout.activity_market_sell_on_item);
         Button buttonLoadImage = findViewById(R.id.addphotobtn2);
         buttonLoadImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,7 +25,7 @@ public class createEvent extends AppCompatActivity {
 
                 Intent i = new Intent(
                         Intent.ACTION_PICK,
-                        android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                        MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 
                 startActivityForResult(i, RESULT_LOAD_IMAGE);
             }
@@ -47,15 +47,14 @@ public class createEvent extends AppCompatActivity {
             cursor.close();
         }
     }
-    public void onClickCreatedEvent(View view){
+    public void onClickMarketSellOnItem(View view){
         EditText editText12 = findViewById(R.id.editTextM12);
         EditText editText16 = findViewById(R.id.editTextM16);
-        EditText editText17 = findViewById(R.id.editText17);
-        if (editText12.length() > 0 && editText16.length() > 0 && editText17.length() > 0){
-            Toast.makeText(this, "Your Event Has Been Created!", Toast.LENGTH_LONG).show();
+        if (editText12.length() > 0 && editText16.length() > 0 ){
+            Toast.makeText(this, "Your Item has been posted!", Toast.LENGTH_LONG).show();
             finish();
         }else{
-            Toast.makeText(this, "Missing Event Data! Fill in all Entries!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Missing item info! Fill in all Entries!", Toast.LENGTH_LONG).show();
         }
 
     }

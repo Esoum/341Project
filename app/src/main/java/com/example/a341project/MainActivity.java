@@ -23,8 +23,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onClickMarket(View view){
-
+    public void onClickMarket(View view) {
+        Intent intent = new Intent(this, marketMain.class);
+        startActivity(intent);
     }
 
     public void onClickLogIn(View view){

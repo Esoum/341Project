@@ -41,4 +41,11 @@
         <item>Kids and Family</item>
         <item>Other </item>
     </string-array>
+
+    <string-array name ="condition">
+        <item>Very good</item>
+        <item>good</item>
+        <item>Fair</item>
+        <item>Poor</item>
+    </string-array>
 </resources>
