@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".marketSellOnItem"></activity>
+        <activity android:name=".teletubbies"></activity>
+        <activity android:name=".results" />
+        <activity android:name=".search" />
+        <activity android:name=".marketSellOnItem" />
         <activity android:name=".marketMain" />
         <activity android:name=".createEvent" />
         <activity android:name=".eventMain" />
