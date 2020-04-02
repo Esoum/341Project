@@ -110,6 +110,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
     <ImageView
+            android:onClick="onClickItem2"
         android:id="@+id/imageView11"
         android:layout_width="95dp"
         android:layout_height="51dp"
@@ -121,6 +122,7 @@
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
     <ImageView
+            android:onClick="onClickItem3"
         android:id="@+id/imageView12"
         android:layout_width="86dp"
         android:layout_height="52dp"
@@ -132,6 +134,7 @@
         app:srcCompat="@android:drawable/ic_lock_lock" />
 
     <ImageView
+            android:onClick="onClickItem5"
         android:id="@+id/imageView13"
         android:layout_width="83dp"
         android:layout_height="53dp"
@@ -143,6 +146,7 @@
         app:srcCompat="@android:drawable/sym_action_call" />
 
     <ImageView
+            android:onClick="onClickItem6"
         android:id="@+id/imageView14"
         android:layout_width="80dp"
         android:layout_height="46dp"
@@ -242,6 +246,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView14" />
 
     <ImageView
+            android:onClick="onClickItem1"
         android:id="@+id/imageView16"
         android:layout_width="88dp"
         android:layout_height="50dp"
@@ -253,6 +258,7 @@
         app:srcCompat="@android:drawable/presence_video_busy" />
 
     <ImageView
+            android:onClick="onClickItem4"
         android:id="@+id/imageView17"
         android:layout_width="84dp"
         android:layout_height="49dp"
