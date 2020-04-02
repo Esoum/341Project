@@ -4,45 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".teletubbies">
+    tools:context=".umbrella">
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="500dp"
         android:layout_height="53dp"
+        app:srcCompat="@drawable/banner"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/banner" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="215dp"
-        android:layout_height="291dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginRight="6dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView11"
-        app:layout_constraintHorizontal_bias="0.083"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:srcCompat="@drawable/teletubbies" />
+        tools:layout_editor_absoluteX="-45dp"
+        tools:layout_editor_absoluteY="-6dp" />
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="184dp"
-        android:layout_height="235dp"
-        android:layout_marginTop="34dp"
-        android:text="Date: July 11th, 2020 \n \n Time: 5pm-7pm \n \n Location: Kelowna City Park \n \n Price: $10 for adults, $5 for kids"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/shirttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Striped umbrella"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="362dp"
         android:layout_height="53dp"
         android:layout_marginTop="3dp"
-        android:text="Bring the kids to see the Teletubbies perform live this summer! "
+        android:text="I'm selling a sun umbrella that is needed for the summer sun! $20"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,31 +43,23 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
         android:text="Description"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
-
-    <Button
-        android:id="@+id/attendingBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="20dp"
-        android:text="I'm Attending!"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
 
     <Button
         android:id="@+id/backBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="9dp"
         android:text="Back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/attendingBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/msgBtn" />
 
     <Button
         android:id="@+id/homeBtn"
@@ -84,19 +67,31 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:text="Home"
         app:layout_constraintStart_toEndOf="@+id/backBtn"
-        app:layout_constraintTop_toBottomOf="@+id/attendingBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/msgBtn" />
 
-    <TextView
-        android:id="@+id/textView10"
+    <Button
+        android:id="@+id/msgBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
-        android:text="Teletubbies Performance"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Message the seller"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="262dp"
+        android:layout_height="255dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/shirttext"
+        app:srcCompat="@drawable/umbrella" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

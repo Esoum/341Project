@@ -1,47 +1,49 @@
 package com.example.a341project;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
-import android.widget.Button;
-import android.view.View;
-import android.widget.Toast;
+
 import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.Toast;
 
-public class teletubbies extends AppCompatActivity {
+public class umbrella extends AppCompatActivity {
 
-    Button homeBtn;
-    Button backBtn;
-    Button attendingBtn;
+    Button homeBtn, backBtn, msgBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teletubbies);
+        setContentView(R.layout.activity_umbrella);
 
         homeBtn=findViewById(R.id.homeBtn);
         backBtn=findViewById(R.id.backBtn);
-        attendingBtn=findViewById(R.id.attendingBtn);
+        msgBtn=findViewById(R.id.msgBtn);
 
         backBtn.setOnClickListener(new AdapterView.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent new_intent= new Intent(teletubbies.this, results.class);
+                Intent new_intent= new Intent(umbrella.this, marketMain.class);
                 startActivity(new_intent);            }
         });
         homeBtn.setOnClickListener(new AdapterView.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent new_intent= new Intent(teletubbies.this, MainActivity.class);
+                Intent new_intent= new Intent(umbrella.this, MainActivity.class);
                 startActivity(new_intent);            }
         });
-        attendingBtn.setOnClickListener(new AdapterView.OnClickListener(){
+        msgBtn.setOnClickListener(new AdapterView.OnClickListener(){
             @Override
             public void onClick(View view){
-                Toast.makeText(getApplicationContext(),"Thank you for letting us know you are attending!", Toast.LENGTH_SHORT).show();
-                Intent new_intent= new Intent(teletubbies.this, MainActivity.class);
+                Bundle bundle=new Bundle();
+                bundle.putCharSequence("item","striped umbrella");
+                Intent new_intent= new Intent(umbrella.this, messageSeller.class);
+                new_intent.putExtras(bundle);
                 startActivity(new_intent);            }
         });
     }
-}
+
+    }
 
