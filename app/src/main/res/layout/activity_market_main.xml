@@ -38,7 +38,6 @@
         android:layout_marginStart="188dp"
         android:layout_marginLeft="188dp"
         android:layout_marginTop="12dp"
-        android:onClick="onClickMarketSellOnItem"
         android:text="Sell an Item"
         android:textSize="18sp"
         android:textStyle="bold"
