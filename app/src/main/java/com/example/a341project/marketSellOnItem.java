@@ -58,4 +58,7 @@ public class marketSellOnItem extends AppCompatActivity {
         }
 
     }
+    public void onClickBack(View view){
+        finish();
+    }
 }
