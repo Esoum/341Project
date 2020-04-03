@@ -47,7 +47,7 @@ public class marketSellOnItem extends AppCompatActivity {
             cursor.close();
         }
     }
-    public void onClickMarketSellOnItem(View view){
+    public void onClickCreatedEvent(View view){
         EditText editText12 = findViewById(R.id.editTextM12);
         EditText editText16 = findViewById(R.id.editTextM16);
         if (editText12.length() > 0 && editText16.length() > 0 ){
@@ -57,5 +57,8 @@ public class marketSellOnItem extends AppCompatActivity {
             Toast.makeText(this, "Missing item info! Fill in all Entries!", Toast.LENGTH_LONG).show();
         }
 
+    }
+    public void onClickBack(View view){
+        finish();
     }
 }
