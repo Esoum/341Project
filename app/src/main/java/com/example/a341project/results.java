@@ -43,7 +43,7 @@ public class results extends AppCompatActivity {
                 startActivity(new_intent);            }
         });
 
-        /* Add these back in once we have postings created.
+
         shirtBtn.setOnClickListener(new AdapterView.OnClickListener(){
            @Override
           public void onClick(View view){
@@ -57,6 +57,6 @@ public class results extends AppCompatActivity {
                 Intent new_intent= new Intent(results.this, umbrella.class);
                 startActivity(new_intent);            }
         });
-    */
+
     }
 }
