@@ -20,5 +20,4 @@ public class eventMain extends AppCompatActivity {
         startActivity(intent);
     }
 
-
 }

@@ -42,7 +42,7 @@
         <item>Other </item>
     </string-array>
 
-    <string-array name="condition">
+    <string-array name ="condition">
         <item>Very good</item>
         <item>good</item>
         <item>Fair</item>
