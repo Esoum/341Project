@@ -17,7 +17,6 @@
     <string name="profile_photo">profile photo</string>
     <string name="todo">TODO</string>
     <string name="mm_dd_yyyy">mm/dd/yyyy</string>
-    <string name="back">Back</string>
     <string name="cont">Continue</string>
     <string name="i_am">I am…</string>
     <string name="superhero">Superhero</string>
@@ -26,6 +25,37 @@
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="confirm">Confirm</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="camping">Camping</string>
+    <string name="concerts">Concerts</string>
+    <string name="fire_warnings">Fire Warnings</string>
+    <string name="shoes">Shoes</string>
+    <string name="back">Back</string>
+    <string name="thurs_april_30th_2020">Thurs April 30th, 2020</string>
+    <string name="sun_april_4th_2020">Sun April 4th, 2020</string>
+    <string name="downtown_dance_party">Downtown Dance Party</string>
+    <string name="ubco_schools_out">UBCO schools out!</string>
+    <string name="ubco_online_grad">UBCO online Grad</string>
+    <string name="mon_april_24th_2020">Mon April 24th, 2020</string>
+    <string name="create_an_event">Create An Event</string>
+    <string name="dance_party_img">dance party img</string>
+    <string name="online_grad_img">online grad img</string>
+    <string name="schools_out_img">schools out img</string>
+    <string name="sell_an_item">Sell an Item</string>
+    <string name="recently_posted">Recently Posted</string>
+    <string name="yellow_t_shirt">Yellow t-shirt</string>
+    <string name="i_m_selling_a_lightly_used_t_shirt_great_for_the_summer_10_or_best_offer">I\'m selling a lightly-used t-shirt. Great for the summer! $10 or best offer</string>
+    <string name="more">More</string>
+    <string name="striped_umbrella">Striped umbrella</string>
+    <string name="i_m_selling_a_sun_umbrella_that_is_needed_for_the_summer_sun_20">I\'m selling a sun umbrella that is needed for the summer sun! $20</string>
+    <string name="more_info">More info</string>
+    <string name="local_marketplace">Local Marketplace</string>
+    <string name="t_shirt_img">t-shirt img</string>
+    <string name="umbrella_img">umbrella img</string>
+    <string name="i_am_looking_for">I am looking for...</string>
+    <string name="find_it">Find It!</string>
+    <string name="_20">$20</string>
+    <string name="_10">$10</string>
     <string-array name="category">
         <item>Music</item>
         <item>Visual Arts</item>
