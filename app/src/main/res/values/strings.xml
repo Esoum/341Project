@@ -56,6 +56,31 @@
     <string name="find_it">Find It!</string>
     <string name="_20">$20</string>
     <string name="_10">$10</string>
+    <string name="event_category">Event Category</string>
+    <string name="condition">Condition</string>
+    <string name="price">Price</string>
+    <string name="post_an_item">Post An Item</string>
+    <string name="item_name">Item Name</string>
+    <string name="dollar">$</string>
+    <string name="post_your_item">Post Your Item</string>
+    <string name="description">Description</string>
+    <string name="my_item_is">My item is...</string>
+    <string name="itempic">itempic</string>
+    <string name="event_date_dd_mm_yyyy">Event Date\nDD/MM/YYYY</string>
+    <string name="event_name">Event Name</string>
+    <string name="upload_a_photo">Upload a photo!</string>
+    <string name="post_event">Post Event</string>
+    <string name="event_description">Event Description</string>
+    <string name="results_summer">Results: summer</string>
+    <string name="teletubbies">teletubbies</string>
+    <string name="tshirt">tshirt</string>
+    <string name="umbrella">umbrella</string>
+    <string name="home">Home</string>
+    <string name="message_the_seller">Message the seller</string>
+    <string name="date_july_11th_2020_n_n_time_5pm_7pm_n_n_location_kelowna_city_park_n_n_price_10_for_adults_5_for_kids">Date: July 11th, 2020 \n \n Time: 5pm-7pm \n \n Location: Kelowna City Park \n \n Price: $10 for adults, $5 for kids</string>
+    <string name="bring_the_kids_to_see_the_teletubbies_perform_live_this_summer">Bring the kids to see the Teletubbies perform live this summer!</string>
+    <string name="i_m_attending">I\'m Attending!</string>
+    <string name="teletubbies_performance">Teletubbies Performance</string>
     <string-array name="category">
         <item>Music</item>
         <item>Visual Arts</item>

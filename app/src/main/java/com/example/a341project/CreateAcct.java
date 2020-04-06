@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 public class CreateAcct extends AppCompatActivity {
 
-    private static int RESULT_LOAD_IMAGE = 1;
+    static final int REQUEST_IMAGE_GET = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,36 +25,17 @@ public class CreateAcct extends AppCompatActivity {
         setContentView(R.layout.activity_create_acct);
 
         Button buttonLoadImage = findViewById(R.id.addphotobtn);
-        buttonLoadImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
 
-                Intent i = new Intent(
-                        Intent.ACTION_PICK,
-                        android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-
-                startActivityForResult(i, RESULT_LOAD_IMAGE);
-            }
-        });
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_IMAGE_GET && resultCode == RESULT_OK) {
+            Bitmap thumbnail = data.getParcelableExtra("data");
+            Uri fullPhotoUri = data.getData();
 
-        if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && null != data) {
-            Uri selectedImage = data.getData();
-            String[] filePathColumn = {MediaStore.Images.Media.DATA};
-
-            Cursor cursor = getContentResolver().query(selectedImage,
-                    filePathColumn, null, null, null);
-            cursor.moveToFirst();
-
-            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-            String picturePath = cursor.getString(columnIndex);
-            cursor.close();
-
-            //ImageView imageView = findViewById(R.id.imageView3);
-            //imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
+            ImageView imageView = findViewById(R.id.imageView3);
+            imageView.setImageURI(fullPhotoUri);
         }
     }
 
@@ -76,6 +57,14 @@ public class CreateAcct extends AppCompatActivity {
             }
             else
                 startActivity(intent);
+        }
+
+        public void selectImage(View view) {
+            Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+            intent.setType("image/*");
+            if (intent.resolveActivity(getPackageManager()) != null) {
+                startActivityForResult(intent, REQUEST_IMAGE_GET);
+            }
         }
 
 }

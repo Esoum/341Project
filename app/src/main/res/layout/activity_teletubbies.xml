@@ -10,6 +10,7 @@
         android:id="@+id/imageView5"
         android:layout_width="500dp"
         android:layout_height="53dp"
+        android:contentDescription="@string/banner"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -21,6 +22,7 @@
         android:layout_height="291dp"
         android:layout_marginTop="36dp"
         android:layout_marginRight="6dp"
+        android:contentDescription="@string/teletubbies"
         app:layout_constraintEnd_toStartOf="@+id/textView11"
         app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +34,7 @@
         android:layout_width="184dp"
         android:layout_height="235dp"
         android:layout_marginTop="34dp"
-        android:text="Date: July 11th, 2020 \n \n Time: 5pm-7pm \n \n Location: Kelowna City Park \n \n Price: $10 for adults, $5 for kids"
+        android:text="@string/date_july_11th_2020_n_n_time_5pm_7pm_n_n_location_kelowna_city_park_n_n_price_10_for_adults_5_for_kids"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -42,7 +44,7 @@
         android:layout_width="362dp"
         android:layout_height="53dp"
         android:layout_marginTop="3dp"
-        android:text="Bring the kids to see the Teletubbies perform live this summer! "
+        android:text="@string/bring_the_kids_to_see_the_teletubbies_perform_live_this_summer"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,18 +55,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
-        android:text="Description"
+        android:text="@string/description"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        android:layout_marginStart="24dp" />
 
     <Button
         android:id="@+id/attendingBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
         android:layout_marginTop="20dp"
-        android:text="I'm Attending!"
+        android:text="@string/i_m_attending"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -72,9 +75,10 @@
         android:id="@+id/backBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
         android:layout_marginTop="12dp"
-        android:text="Back"
+        android:text="@string/back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/attendingBtn" />
 
@@ -85,7 +89,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
-        android:text="Home"
+        android:text="@string/home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toEndOf="@+id/backBtn"
         app:layout_constraintTop_toBottomOf="@+id/attendingBtn" />
 
@@ -94,7 +100,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="31dp"
-        android:text="Teletubbies Performance"
+        android:text="@string/teletubbies_performance"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
