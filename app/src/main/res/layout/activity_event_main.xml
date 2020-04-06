@@ -7,14 +7,14 @@
         tools:context=".eventMain">
 
     <TextView
-            android:id="@+id/textView20"
-            android:layout_width="208dp"
-            android:layout_height="44dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
-            android:text="@string/thurs_april_30th_2020"
-            app:layout_constraintStart_toEndOf="@+id/imageView8"
-            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        android:id="@+id/textView20"
+        android:layout_width="208dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:text="July 11, 2020"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <TextView
         android:id="@+id/textView19"
@@ -33,7 +33,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:text="@string/sun_april_4th_2020"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/imgButton"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
@@ -43,7 +43,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
         android:layout_marginTop="28dp"
-        android:text="@string/ubco_schools_out"
+        android:text="@string/teletubbies"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
@@ -56,7 +56,7 @@
         android:layout_marginTop="28dp"
         android:text="@string/ubco_online_grad"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toBottomOf="@+id/imgButton" />
 
     <ImageView
             android:id="@+id/imageView2"
@@ -110,41 +110,56 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <ImageView
-        android:id="@+id/imageView6"
+    <ImageButton
+        android:id="@+id/imgButton"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
         android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
         android:contentDescription="@string/dance_party_img"
+        android:onClick="goToDance"
+        android:padding="0dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/stockevent1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eventTitle"
-        app:srcCompat="@drawable/stockevent1" />
+        app:layout_constraintTop_toBottomOf="@+id/eventTitle" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView7"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
         android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
         android:contentDescription="@string/online_grad_img"
+        android:onClick="goToGrad"
+        android:padding="0dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/stockevent2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:srcCompat="@drawable/stockevent2" />
+        app:layout_constraintTop_toBottomOf="@+id/imgButton" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView8"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
         android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
         android:contentDescription="@string/schools_out_img"
+        android:onClick="goToTeletubbies"
+        android:padding="0dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/teletubbies"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:srcCompat="@drawable/stockevent3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <TextView
         android:id="@+id/textView14"
@@ -154,7 +169,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="32dp"
         android:text="@string/downtown_dance_party"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/imgButton"
         app:layout_constraintTop_toBottomOf="@+id/eventTitle" />
 
     <TextView

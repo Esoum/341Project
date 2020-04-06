@@ -25,8 +25,7 @@ public class umbrella extends AppCompatActivity {
         backBtn.setOnClickListener(new AdapterView.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent new_intent= new Intent(umbrella.this, marketMain.class);
-                startActivity(new_intent);            }
+               finish();        }
         });
         homeBtn.setOnClickListener(new AdapterView.OnClickListener(){
             @Override

@@ -72,7 +72,7 @@
     <string name="post_event">Post Event</string>
     <string name="event_description">Event Description</string>
     <string name="results_summer">Results: summer</string>
-    <string name="teletubbies">teletubbies</string>
+    <string name="teletubbies">Teletubbies</string>
     <string name="tshirt">tshirt</string>
     <string name="umbrella">umbrella</string>
     <string name="home">Home</string>
@@ -81,6 +81,12 @@
     <string name="bring_the_kids_to_see_the_teletubbies_perform_live_this_summer">Bring the kids to see the Teletubbies perform live this summer!</string>
     <string name="i_m_attending">I\'m Attending!</string>
     <string name="teletubbies_performance">Teletubbies Performance</string>
+    <string name="date_sunday_apr_24_2020">Date: Sunday Apr 24, 2020</string>
+    <string name="online_grad">Online grad</string>
+    <string name="grad">Grad</string>
+    <string name="dance_party">Dance Party</string>
+    <string name="come_dance">Come dance!</string>
+    <string name="date_sunday_apr_4_2020">Date: Sunday Apr 4, 2020</string>
     <string-array name="category">
         <item>Music</item>
         <item>Visual Arts</item>

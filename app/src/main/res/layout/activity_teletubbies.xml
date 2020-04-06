@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/banner" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imgButton"
         android:layout_width="215dp"
         android:layout_height="291dp"
         android:layout_marginTop="36dp"
@@ -58,7 +58,7 @@
         android:text="@string/description"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imgButton"
         android:layout_marginStart="24dp" />
 
     <Button

@@ -1,15 +1,15 @@
 package com.example.a341project;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
-import android.widget.Button;
-import android.view.View;
-import android.widget.Toast;
+
 import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.Toast;
 
-public class teletubbies extends AppCompatActivity {
-
+public class DanceParty extends AppCompatActivity {
     Button homeBtn;
     Button backBtn;
     Button attendingBtn;
@@ -17,7 +17,7 @@ public class teletubbies extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teletubbies);
+        setContentView(R.layout.activity_dance_party);
 
         homeBtn=findViewById(R.id.homeBtn);
         backBtn=findViewById(R.id.backBtn);
@@ -30,7 +30,7 @@ public class teletubbies extends AppCompatActivity {
         homeBtn.setOnClickListener(new AdapterView.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent new_intent= new Intent(teletubbies.this, MainActivity.class);
+                Intent new_intent= new Intent(DanceParty.this, MainActivity.class);
                 startActivity(new_intent);
             }
         });
@@ -39,9 +39,8 @@ public class teletubbies extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Toast.makeText(getApplicationContext(),"Thank you for letting us know you are attending!", Toast.LENGTH_SHORT).show();
-                Intent new_intent= new Intent(teletubbies.this, MainActivity.class);
+                Intent new_intent= new Intent(DanceParty.this, MainActivity.class);
                 startActivity(new_intent);            }
         });
     }
 }
-

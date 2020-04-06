@@ -38,4 +38,18 @@ public class eventMain extends AppCompatActivity {
         startActivity(new_intent);
     }
 
+    public void goToDance(View view){
+        Intent intent = new Intent(this, DanceParty.class);
+        startActivity(intent);
+    }
+
+    public void goToGrad(View view){
+        Intent intent = new Intent(this, Grad.class);
+        startActivity(intent);
+    }
+
+    public void goToTeletubbies(View view){
+        Intent intent = new Intent(this, teletubbies.class);
+        startActivity(intent);
+    }
 }

@@ -24,9 +24,7 @@ public class shirt extends AppCompatActivity {
 
         backBtn.setOnClickListener(new AdapterView.OnClickListener(){
             @Override
-            public void onClick(View view){
-                Intent new_intent= new Intent(shirt.this, marketMain.class);
-                startActivity(new_intent);            }
+            public void onClick(View view){finish();         }
         });
         homeBtn.setOnClickListener(new AdapterView.OnClickListener(){
             @Override

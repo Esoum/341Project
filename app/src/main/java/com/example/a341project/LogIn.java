@@ -74,4 +74,8 @@ public class LogIn extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Please enter a valid username and password",Toast.LENGTH_SHORT).show();
     }
 
+    public void onClickBack(View view){
+        finish();
+    }
+
 }
